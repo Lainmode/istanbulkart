@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import SelectPaymentMethodPage from "../selectpaymentmethod/page";
 import ReadCardPage from "../readcard/page";
 
-export default function BuyCardPage() {
+export default function ViewSubPage() {
 	const router = useRouter();
 
 	return (
