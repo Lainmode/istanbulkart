@@ -6,7 +6,7 @@ import { ChevronLeftIcon } from "@radix-ui/react-icons";
 import { BackButton } from "@/components/ui/custom";
 import { useRouter } from "next/navigation";
 
-export default function FailedToReadPage() {
+export default function SelectPaymentMethodPage() {
 	const router = useRouter();
 
 	return (
