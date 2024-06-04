@@ -6,7 +6,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ChevronLeftIcon } from "@radix-ui/react-icons";
+import { ChevronLeftIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +49,15 @@ export function BackButton({ onClick }: BackButtonProps) {
 		<Button variant="outline" className="rounded-xl bg-gradient border-black gap-4 text-xl py-6 px-8" onClick={onClick}>
 			<ChevronLeftIcon></ChevronLeftIcon>
 			Go Back
+		</Button>
+	);
+}
+
+export function MenuButton({ onClick }: BackButtonProps) {
+	return (
+		<Button variant="outline" className="rounded-xl bg-gradient border-black gap-4 text-xl py-6 px-8" onClick={onClick}>
+			<HamburgerMenuIcon></HamburgerMenuIcon>
+			Menu
 		</Button>
 	);
 }
