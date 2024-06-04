@@ -6,7 +6,7 @@ import { ChevronLeftIcon, CrossCircledIcon } from "@radix-ui/react-icons";
 import { BackButton } from "../layout";
 import { useRouter } from "next/navigation";
 
-export default function FailedToReadPage() {
+export default function BuyCardPage() {
 	const router = useRouter();
 
 	return (
