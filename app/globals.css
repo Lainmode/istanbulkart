@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	.bg-gradient {
+		background: var(--gradient);
+	}
+
+	.text-gradient {
+		color: var(--gradient);
+	}
+
+	:root {
+		/* Name: custom color palette
+         Author: Ilias Ism
+         URL: https://gradient.page */
+
+		--gradient: #1636a9;
+
+		--background: 210 26% 7.84%;
+		--foreground: 210 4% 99.9%;
+
+		--muted: 210 19.6% 35.28%;
+		--muted-foreground: 210 4% 59.8%;
+
+		--popover: 210 54.6% 8.82%;
+		--popover-foreground: 210 4% 99.9%;
+
+		--card: 210 54.6% 8.82%;
+		--card-foreground: 210 4% 99.9%;
+
+		--border: 210 19.6% 35.28%;
+		--input: 210 19.6% 35.28%;
+
+		--primary: 210 40% 98%;
+		--primary-foreground: 210 4% 9.8%;
+
+		--secondary: 210 19.6% 35.28%;
+		--secondary-foreground: 210 4% 99.9%;
+
+		--accent: 210 19.6% 35.28%;
+		--accent-foreground: 210 4% 99.9%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 4% 99.9%;
+
+		--ring: 210 40% 98%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+/* Typography */
+h1 {
+	@apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+}
+
+h2 {
+	@apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+
+h3 {
+	@apply scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+h4 {
+	@apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
+
+p {
+	@apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+blockquote {
+	@apply mt-6 border-l-2 pl-6 italic;
+}
+
+code {
+	@apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+}
