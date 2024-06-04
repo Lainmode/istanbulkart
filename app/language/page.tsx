@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
 import { ChevronLeftIcon } from "@radix-ui/react-icons";
-import { BackButton } from "../layout";
+import { BackButton } from "@/components/ui/custom";
 import { useRouter } from "next/navigation";
 
 export default function LanguagePage() {
