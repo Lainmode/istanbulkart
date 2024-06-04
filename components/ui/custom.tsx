@@ -5,7 +5,7 @@ interface BackButtonProps {
 	onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
-export function BackButton({ onClick }: BackButtonProps) {
+function BackButton({ onClick }: BackButtonProps) {
 	return (
 		<Button variant="outline" className="rounded-xl bg-gradient border-black gap-4 text-xl py-6 px-8" onClick={onClick}>
 			<ChevronLeftIcon></ChevronLeftIcon>
@@ -14,7 +14,7 @@ export function BackButton({ onClick }: BackButtonProps) {
 	);
 }
 
-export function MenuButton({ onClick }: BackButtonProps) {
+function MenuButton({ onClick }: BackButtonProps) {
 	return (
 		<Button variant="outline" className="rounded-xl bg-gradient border-black gap-4 text-xl py-6 px-8" onClick={onClick}>
 			<HamburgerMenuIcon></HamburgerMenuIcon>
@@ -22,3 +22,5 @@ export function MenuButton({ onClick }: BackButtonProps) {
 		</Button>
 	);
 }
+
+export { BackButton, MenuButton };
